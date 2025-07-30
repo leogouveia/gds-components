@@ -1,0 +1,20 @@
+{
+  "name": "@gds/components",
+  "version": "1.0.0",
+  "description": "Uma biblioteca de componentes de UI para React Native",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.10",
+    "typescript": "~5.8.3"
+  },
+  "author": "Leonardo de Albuquerque Gouveia",
+  "license": "ISC"
+}
