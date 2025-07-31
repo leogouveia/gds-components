@@ -1,5 +1,7 @@
-import {gdsThemeConfig} from "@gds/components";
+
 import {createTamagui} from "tamagui";
+import {gdsThemeConfig} from "@gds/components/dist/tamagui.config";
+
 
 export const config = createTamagui(gdsThemeConfig);
 
