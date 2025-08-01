@@ -1,4 +1,6 @@
 {
+  "types": ["node", "react"],
+  "lib": ["dom", "esnext"],
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
