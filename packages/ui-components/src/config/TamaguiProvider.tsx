@@ -1,3 +1,4 @@
+import React from 'react';
 import { TamaguiProvider as TamaguiProviderBase } from 'tamagui';
 import { gdsConfig } from './tamagui.config';
 
