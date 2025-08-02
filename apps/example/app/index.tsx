@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native';
+import { Text, View } from '@gds/components';
 
 export default function Index() {
   return (
