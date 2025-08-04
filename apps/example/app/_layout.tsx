@@ -1,11 +1,10 @@
-import { TGProvider } from '@gds/components';
+import { DSCProvider } from '@leogouveia/gds-library';
 import { Stack } from 'expo-router';
 
 export default function RootLayout() {
-  console.log(TGProvider);
   return (
-    <TGProvider>
+    <DSCProvider>
       <Stack />
-    </TGProvider>
+    </DSCProvider>
   );
 }

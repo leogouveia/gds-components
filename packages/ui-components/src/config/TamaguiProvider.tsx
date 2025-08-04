@@ -1,9 +1,16 @@
 import React from 'react';
-import { TamaguiProvider as TamaguiProviderBase } from 'tamagui';
+import {
+  TamaguiProvider as TamaguiProviderBase,
+  type TamaguiProviderProps,
+} from 'tamagui';
 import { gdsConfig } from './tamagui.config';
 
-export function TamaguiProvider({ children }: { children: React.ReactNode }) {
+type DSCProviderProps = TamaguiProviderProps & { children: React.ReactNode };
+
+export function TamaguiProvider({ children, ...props }: DSCProviderProps) {
   return (
-    <TamaguiProviderBase config={gdsConfig}>{children}</TamaguiProviderBase>
+    <TamaguiProviderBase config={gdsConfig} {...props}>
+      {children}
+    </TamaguiProviderBase>
   );
 }

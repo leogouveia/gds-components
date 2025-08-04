@@ -26,8 +26,8 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@gds/components": ["./packages/ui-components/src"],
-      "@gds/components/*": ["./packages/ui-components/src/*"]
+      "@leogouveia/gds-library": ["./packages/ui-components/src"],
+      "@leogouveia/gds-library/*": ["./packages/ui-components/src/*"]
     }
   },
   "include": ["packages/ui-components/src/**/*", "apps/example/app/**/*"],

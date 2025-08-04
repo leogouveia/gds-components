@@ -1,17 +1,18 @@
 {
-  "types": ["node", "react"],
-  "lib": ["dom", "esnext"],
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2017",
     "module": "commonjs",
+    "lib": ["es2017"],
     "jsx": "react-native",
-    "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": true
+    "declaration": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "lib", "**/__tests__/**/*"]
 }

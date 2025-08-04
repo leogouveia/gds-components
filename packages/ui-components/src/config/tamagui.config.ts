@@ -1,5 +1,6 @@
 import { defaultConfig } from '@tamagui/config/v4';
 import { createTamagui } from 'tamagui';
+import { themes } from './themes';
 
 export const gdsThemeConfig = {
   ...defaultConfig,
@@ -13,7 +14,10 @@ export const gdsThemeConfig = {
   },
 };
 
-export const gdsConfig = createTamagui(gdsThemeConfig);
+export const gdsConfig = createTamagui({
+  ...gdsThemeConfig,
+  themes,
+});
 
 // now, make your types flow nicely back to your `tamagui` import:
 type GdsConfig = typeof gdsConfig;
